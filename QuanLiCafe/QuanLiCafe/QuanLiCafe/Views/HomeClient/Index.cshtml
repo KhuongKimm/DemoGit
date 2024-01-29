@@ -1,0 +1,443 @@
+﻿@model Models.ViewModel.ViewArea
+@{
+    var user_Sesion = Session["User_Session"] as QuanLiCafe.Common.UserLogin;
+}
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Assets/Client/css/bootstrap-theme.min.css">
+    <link href="/Assets/Client/css/all.css" rel="stylesheet" />
+    <link href="/Assets/Client/css/all.min.css" rel="stylesheet" />
+    <script src="/Assets/Admin/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/Assets/Client/css/Style.css">
+    <link href="/Assets/Client/css/jquery-confirm.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/libs/css/styleDelete.css" rel="stylesheet" />
+    <link href="~/Assets/Client/css/scollbarcss.css" rel="stylesheet" />
+    <title>TL</title>
+
+</head>
+<body>
+    <!-- Begin Header -->
+    <style>
+        .current_select {
+            background: #438e3a !important;
+            color: #fff !important;
+            border-color: #438e3a !important;
+        }
+
+        .export {
+            display: none;
+        }
+    </style>
+
+    <div id="navigation" class="ng-scope">
+        <div class="h3" id="logo">
+            T-COFFEE
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light float-right" style="padding-right: 15px;padding-bottom: 0;padding-top: 0;height: 46px;">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" data-id="@user_Sesion.User_Id" aria-haspopup="true" aria-expanded="false" style="color: #000;border-left:1px solid hsla(0, 0%, 4%, 0.37); padding:9px 21px">
+                            @user_Sesion.Name
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="margin-right:-14px">
+                            @if (user_Sesion.idRoel != 1)
+                            {
+                            <a class="dropdown-item" href="/Admin/Home/HomeMember">
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;Màn hình quản lí
+                            </a>
+                            }
+                            else
+                            {
+                            <a class="dropdown-item" href="/Admin/Home/Index">
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;Màn hình quản lí
+                            </a>
+                            }
+                            <a class="dropdown-item" href="/Admin/Login/Index">
+                                <i class="fa fa-sign-out-alt"></i>&nbsp;&nbsp;Đăng xuất
+                            </a>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End Header -->
+    <!-- Begin Content -->
+    <div id="content">
+        <div class="row" style="margin:auto">
+            <!-- Begin Conten-Left-->
+            <div class="col-sm-6 h5" id="contenleft" style="padding-top: 20px;">
+                <div id="Nohoadon">
+                    @*p>Không có đơn hàng nào<p>*@
+                </div>
+                <!-- List Category-->
+                <div id="Contenleft_danhmuc" class="col-12">
+                    @*@Html.Partial("Contenleft_danhmuc", Model)*@
+                    <div class="danhMuc col-4">
+                        @foreach (var item in Model.FoodCategorys)
+                        {
+                            <a href="#mon_@item.FoodCategory_id" id="CaFe" class="btn btn-outline-primary btn-xs">@item.FoodCategory_name</a><br />
+                        }
+                    </div>
+                    <div id="danhMuc_item" class="col-8">
+                        @foreach (var item in Model.FoodCategorys)
+                        {
+                            var food = Model.Foods.Where(x => x.idCategory == item.FoodCategory_id);
+                            <div class="danhmic_listitem" id="mon_@item.FoodCategory_id">
+                                @foreach (var k in food)
+                                {
+                                    <a href="#" class="chonmon" onclick="chonmon(@k.Food_id)" data-id="@k.Food_id" name="@k.Food_name" data-content="@k.price">
+                                        <div>
+                                            @k.Food_name <br /> @string.Format("{0:0,0}", k.price) đ
+                                        </div>
+                                    </a>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Conten Right-->
+            <div class="col-sm-6" style="padding-top: 20px;">
+                <div id="ContentRight_Khuvuc" class="col">
+                    <div class="scrtabs-tabs-fixed-container">
+                        <div class="" ng-transclude="">
+                            <ul class="nav" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active ng-binding" id="default" data-toggle="tab" href="#home">Đang mở</a>
+                                </li>
+                                @foreach (var item in Model.Areas)
+                                {
+                                    <li class="nav-item">
+                                        <a class="nav-link ng-binding" data-toggle="tab" href="#@item.Area_id">@item.AreaName</a>
+                                    </li>
+                                }
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane container" id="home">
+                                    <div class="row list_table">
+                                        @foreach (var v in Model.TableFoods)
+                                        {
+                                            if (v.idBill > 0)
+                                            {
+                                                <div class="col-lg-2 item_table ban1" data-id="@v.TableFood_id" data-target="ban_@v.TableFood_id" id="ban_@v.TableFood_id" data-content="@v.TableFood_name" onclick="Bill(this,@v.TableFood_id, @v.idBill,@v.TableFood_id)">
+                                                    <img src="/Assets/Client/Image/cup-coffee.png" alt="Alternate Text" />
+                                                    <p>@v.TableFood_name</p>
+                                                </div>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                                @foreach (var item in Model.Areas)
+                                {
+                                    var tablefood = Model.TableFoods.Where(x => x.idArea == item.Area_id).ToList();
+                                    <div class="tab-pane container" id="@item.Area_id">
+                                        <div class="row list_table">
+                                            @foreach (var v in tablefood)
+                                            {
+                                                <div class="col-lg-2 item_table ban1" data-id="@v.TableFood_id" data-target="ban_@v.TableFood_id" id="ban_@v.TableFood_id" data-content="@v.TableFood_name" onclick="Bill(this,@v.TableFood_id, @v.idBill,@v.TableFood_id)">
+                                                    <img src="/Assets/Client/Image/cup-coffee.png" alt="Alternate Text" />
+                                                    <p>@v.TableFood_name</p>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="thanhToan" class="col">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab-TT" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" value=""></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content col" id="TT_danhmuc">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-wrapper-Del" class="modal">
+        @using (Html.BeginForm("Delete", "HomeClient", FormMethod.Post, new { @class = "modal-contentDel animateDel" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="container-confirm">
+                <div class="title-main">Xác nhận xóa</div>
+                <div class="title-content">
+                    <div class="content-titlt">Bạn có đồng ý xóa ?</div>
+                    <div class="content-confrim">
+                        <a class="btnCf-cancel" onclick="document.getElementById('modal-wrapper-Del').style.display = 'none'">Hủy</a>
+                        <button class="btnCf-yes" type="submit" id="DeleteF">Đồng ý</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <script>
+        var id_bill = 0;
+        var id_table = 0;
+        var idTableSelect = "";
+        //Chọn bàn và tạo Bill
+        function Bill(element, id, bill_id, idtable) {
+            //Đổi màu khi trạng thái bàn thay đổi
+            if (idTableSelect) {
+                if (id_bill > 0) {
+                    //Có hóa đơn
+                    $(idTableSelect).css({ 'background-color': '#68e458', 'border-color': '#68e458' });
+                } else {
+                    //Không có háo đơn
+                    $(idTableSelect).css({ 'background-color': '#fff', 'border-color': '#130d28' });
+                }
+            }
+            idTableSelect = '#' + element.id;
+            id_bill = bill_id;
+            id_table = idtable;
+            //Đang chờ
+            $(idTableSelect).css({ 'background-color': '#97FFFF', 'border-color': '#97FFFF' });
+
+            //hiện thị danh mục và ẩn hóa đơn
+            $('#Contenleft_danhmuc').show();
+            $('.danhMuc a:first-child').click();
+            $('#Nohoadon').hide();
+
+            var iban = "#ban_" + idtable;
+            //Biến thời gian
+            var currentTime = new Date();
+            var day = currentTime.getDate();
+            var month = currentTime.getMonth() + 1;
+            var year = currentTime.getFullYear();
+            if (day < 10) {
+                day = "0" + day;
+            }
+            if (month < 10) {
+                month = "0" + month;
+            }
+            var today_date = day + "/" + month + "/" + year;
+            //Show bill khi bàn có hóa đơn
+
+            if (id_bill > 0) {
+                showBill(id_bill);
+
+            }
+            else {
+
+                $('#thanhToan').hide();
+            }
+        }
+        //Chọn món và tạo BillInfo
+        function chonmon(id) {
+            var idAc = $('#navbarDropdownMenuLink').attr('data-id');
+            var price = $('.chonmon').attr('data-content');
+            var billin = {
+                count: 1,
+                idAccount: idAc,
+                idFood: id,
+                Price: price,
+                idBill: id_bill,
+                idTable: id_table
+            }
+
+            $.ajax({
+                url: '@Url.Action("CreateBillinfo", "HomeClient")',
+                type: 'POST',
+                data: {
+                    billin,
+                    id_table,
+                    idAc,
+                    },
+                        success: function (d) {
+                            console.log(d);
+                            id_table = d.id_table;
+                            id_bill = d.idBill;
+                            showBill(id_bill);
+                            var id = "#ban_" + id_table;
+                            $(id).attr("onclick", `Bill(this,${id_table},${id_bill},${id_table})`);
+                        },
+                error: function () {
+                    alert('error');
+                }
+            })
+        }
+        //Show hóa đơn
+        function showBill(id_bill) {
+            $.ajax({
+                url: '@Url.Action("GetBill", "HomeClient")',
+                type: 'POST',
+                data: {
+                    id_bill
+                    },
+                        success: function (d) {
+                            $('#TT_danhmuc').html(d);
+                            $('#thanhToan').show();
+                        }
+            });
+        }
+        //Thanh toán
+        function thanhtoan(Bill_id) {
+            if (confirm("Xác nhân thanh toán thành công ?")) {
+                $.ajax({
+                    url: '@Url.Action("ThanhToan","HomeClient")',
+                    type: 'POST',
+                    data: {
+                        id_bill
+                        },
+                            success: function (d) {
+                                alert("Thanh toán thành công");
+                                $('.export').css("display", "block");
+                                
+                                $('.export').click(function (id_bill) {
+                                    var id = "#ban_" + id_table;
+                                    $(id).attr("onclick", `Bill(this,${id_table},0,${id_table})`);
+                                    $(id).css({ 'background-color': '#fff', 'border-color': '#130d28' });
+                                    $('#thanhToan').hide();
+                                })
+
+
+                            }
+                });
+            }
+        }
+        //Tăng giảm số lượng.
+        var Total = 0;
+        function Giam(id) {
+            var valConut = $('input[id=' + id + ']').val();
+            var idbill = $('.upCount').attr('data-role');
+            Total = valConut - 1;
+            var valuex = 0;
+            var valueTotal = 0;
+            if (Total < 1) {
+                return false;
+            }
+            else {
+                var valueTotal = $('input[id=' + id + ']').val(Total);
+                var valuex = $('input[id=' + id + ']').attr("value", Total);
+            }
+            var data = {
+                BillInfo_id: id,
+                count: Total
+            };
+            $.ajax({
+                url: '/HomeClient/EditBill',
+                type: 'POST',
+                dataType: 'json',
+                data: { model: JSON.stringify(data) },
+                success: function (response) {
+                    if (response.status) {
+                        //alert('update thành công');
+                        showBill(idbill);
+                    }
+                    else {
+                        alert('thất bại');
+                    }
+                }
+            });
+        }
+        //hủy hóa đơn
+        function huybill(idbill,idtable) {
+    
+            if (confirm("Bạn chắc chắn muốn xóa ?")) {
+                $.ajax({
+                    url: '@Url.Action("DeleteBill", "HomeClient")',
+                    type: 'POST',
+                    data: { idbill, idtable},
+                            success: function (response) {
+                        var id = "#ban_" + id_table;
+                                alert("Xóa bill thành công!");
+                                //var id = "#ban_" + id_table;
+                                $(id).attr("onclick", `Bill(this,${id_table},0,${id_table})`);
+                                $(id).css({ 'background-color': '#fff', 'border-color': '#130d28' });
+                                $('#thanhToan').hide();
+                            }
+                });
+            }
+        }
+        //Chỉ cho phép nhập số
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode == 59 || charCode == 46)
+                return true;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+        function Tang(id) {
+            var valConut = $('input[id=' + id + ']').val();
+            Total = parseInt(valConut) + 1;
+            var valueTotal = $('input[id=' + id + ']').val(Total);
+            var valuex = $('input[id=' + id + ']').attr("value", Total);
+            var idbill = $('.upCount').attr('data-role');
+            console.log(id_bill);
+            var data = {
+                BillInfo_id: id,
+                count: Total
+            };
+            $.ajax({
+                url: '/HomeClient/EditBill',
+                type: 'POST',
+                dataType: 'json',
+                data: { model: JSON.stringify(data) },
+                success: function (response) {
+                    if (response.status) {
+                        //alert('update thành công');
+                        showBill(idbill);
+                    }
+                    else {
+                        alert('thất bại');
+                    }
+                }
+            });
+        }
+        //xóa món
+        function Xoamon(id) {
+            document.getElementById('modal-wrapper-Del').style.display = 'block';
+            var idbill = $('.upCount').attr('data-role');
+            var data = {
+                BillInfo_id: id
+            }
+            $('#DeleteF').click(function (e) {
+                $.ajax({
+                    url: '/HomeClient/Delete',
+                    type: 'POST',
+                    datatype: 'Json',
+                    data: { model: JSON.stringify(data) },
+                    success: function (response) {
+                        if (response.status) {
+                            showBill(idbill);
+                            document.getElementById('modal-wrapper-Del').style.display = 'none';
+                        }
+                        else {
+                            alert('thất bại');
+                        }
+                    }
+                })
+                e.preventDefault();
+                //})
+            }
+            )
+        }
+    </script>
+    <!-- End Content -->
+    <script src="/Assets/Client/js/popper.min.js"></script>
+    <script src="/Assets/Client/js/bootstrap.min.js"></script>
+    <script src="~/Assets/Client/js/SelectFood.js"></script>
+    <script src="/Assets/Client/js/BillThanhToan.js"></script>
+    <script src="/Assets/Client/js/jquery-confirm.min.js"></script>
+</body>
+</html>

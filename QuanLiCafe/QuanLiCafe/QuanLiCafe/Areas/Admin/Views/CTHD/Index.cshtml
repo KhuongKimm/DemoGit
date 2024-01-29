@@ -1,0 +1,124 @@
+﻿@model PagedList.IPagedList<Models.ViewModel.ViewBill>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<style>
+     #date{
+          border-radius:5px;
+        border-color:#007bff;
+        padding:4px 5px;
+        font-size:15px;
+        outline-style: none;
+    }
+</style>
+@section header{
+    Quản lý hóa đơn
+    }
+@section jsFooter{
+    <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Assets/Admin/libs/js/Controller/FoodController.js"></script>
+}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <h4 class="card-header fas fa-coffee">&nbsp; Chi tiết hóa đơn</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Index", "CTHD", FormMethod.Get))
+                {
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input type="text" value="@ViewBag.seaching" placeholder="Tìm kiếm theo tên" class="form-control" name="seaching" />
+                        </div>
+                        <div class="col-3">
+                            <input type="date" name="date" id="date" class="col" />
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-info active btn-sm"><i class="fas fa-search"></i>&nbsp;Tìm kiếm</button>
+                        </div>
+                    </div>
+                }
+                <br />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Số hóa đơn</th>
+                            <th scope="col">Nhân viên</th>
+                            <th scope="col">Ngày Vào</th>
+                            <th scope="col">Giờ vào</th>
+                            <th scope="col">Giờ ra</th>
+                            <th scope="col">Bàn   </th>
+                            <th scope="col">Chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var dem = 1;
+                            var count = ViewBag.rowStart + dem;
+                            var tongtien = 0;
+                            var tong = 0;
+                            foreach (var item in Model)
+                            {
+                              
+
+                                tong += tongtien;
+                                <tr id="row_@item.idBill">
+                                    <th scope="col">@(dem++)</th>
+                                    <td scope="col">@item.idBill</td>
+                                    <td scope="col">@item.UserName</td>
+                                    <td scope="col">@string.Format("{0:dd/MM/yyyy}", item.DateCheckIn)</td>
+                                    <td scope="col">@string.Format("{0}:{1}",item.Timein.Value.Hours,item.Timein.Value.Minutes)</td>
+                                    <td scope="col">
+                                     @string.Format("{0}:{1}",item.Timeout.Value.Hours,item.Timeout.Value.Minutes)
+                                    </td>
+                                    <td>
+                                        @item.TableFood_name
+                                    </td>
+                                 
+                                    <td>
+                                        <a class="btn btn-success btn-sm" data-id="@item.idBill" id="@item.idBill" onclick="ViewCTHD(@item.idBill)" style="color:white;padding:0px 8px"><i class="fas fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = @page, seaching = @ViewBag.seaching}))
+            </div>
+        </div>
+    </div>
+    <div id="modal-wrapper" class="modal">
+
+    </div>
+</div>
+
+<script>
+    function ViewCTHD(id)
+    {
+        showBill(id);
+  
+    }
+    function showBill(id) {
+        $.ajax({
+            url: '@Url.Action("GetBillinfo", "CTHD")',
+            type:'POST',
+            data: {
+                id : id
+            },
+            success: function (d) {
+                $('#modal-wrapper').html(d);
+                $('#modal-wrapper').css("display","block");
+           
+       
+            },
+            erorr:function()
+            {
+                alert("failse rồi");
+            }
+        });
+    }
+</script>
+

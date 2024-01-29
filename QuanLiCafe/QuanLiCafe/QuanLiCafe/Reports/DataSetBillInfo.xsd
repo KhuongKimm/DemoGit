@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBillInfo" targetNamespace="http://tempuri.org/DataSetBillInfo.xsd" xmlns:mstns="http://tempuri.org/DataSetBillInfo.xsd" xmlns="http://tempuri.org/DataSetBillInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="QuanLyQuanCafeDbContext" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyQuanCafeDbContext (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.QuanLyQuanCafeDbContext.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTabelbillTableAdapter" GeneratorDataComponentClassName="DataTabelbillTableAdapter" Name="DataTabelbill" UserDataComponentName="DataTabelbillTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyQuanCafeDbContext (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        BillInfo.BillInfo_id, Bill.Bill_id, Food.Food_name, Account.Name, BillInfo.count, BillInfo.Price, Format(Bill.DateCheckIn, 'dd/MM/yyyy') AS Ngaygio, BillInfo.count * BillInfo.Price AS Total, 
+                         BillInfo.count + BillInfo.Price AS Tong, Bill.Timein AS GioVao, Bill.Timeout AS Giora, TableFood.TableFood_name AS ban
+FROM            BillInfo INNER JOIN
+                         Bill ON BillInfo.idBill = Bill.Bill_id INNER JOIN
+                         Food ON BillInfo.idFood = Food.Food_id INNER JOIN
+                         Account ON BillInfo.idAccount = Account.id INNER JOIN
+                         TableFood ON BillInfo.idTable = TableFood.TableFood_id</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BillInfo_id" DataSetColumn="BillInfo_id" />
+              <Mapping SourceColumn="Bill_id" DataSetColumn="Bill_id" />
+              <Mapping SourceColumn="Food_name" DataSetColumn="Food_name" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="count" DataSetColumn="count" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Ngaygio" DataSetColumn="Ngaygio" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+              <Mapping SourceColumn="Tong" DataSetColumn="Tong" />
+              <Mapping SourceColumn="GioVao" DataSetColumn="GioVao" />
+              <Mapping SourceColumn="Giora" DataSetColumn="Giora" />
+              <Mapping SourceColumn="ban" DataSetColumn="ban" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableFoodTableAdapter" GeneratorDataComponentClassName="DataTableFoodTableAdapter" Name="DataTableFood" UserDataComponentName="DataTableFoodTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyQuanCafeDbContext (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TableFood.TableFood_name, Area.AreaName, Bill.Bill_id
+FROM            TableFood INNER JOIN
+                         Bill ON Bill.Bill_id = TableFood.idBill INNER JOIN
+                         Area ON Area.Area_id = TableFood.idArea</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TableFood_name" DataSetColumn="TableFood_name" />
+              <Mapping SourceColumn="AreaName" DataSetColumn="AreaName" />
+              <Mapping SourceColumn="Bill_id" DataSetColumn="Bill_id" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBillInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBillInfo" msprop:Generator_UserDSName="DataSetBillInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTabelbill" msprop:Generator_TableClassName="DataTabelbillDataTable" msprop:Generator_TableVarName="tableDataTabelbill" msprop:Generator_TablePropName="DataTabelbill" msprop:Generator_RowDeletingName="DataTabelbillRowDeleting" msprop:Generator_RowChangingName="DataTabelbillRowChanging" msprop:Generator_RowEvHandlerName="DataTabelbillRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTabelbillRowDeleted" msprop:Generator_UserTableName="DataTabelbill" msprop:Generator_RowChangedName="DataTabelbillRowChanged" msprop:Generator_RowEvArgName="DataTabelbillRowChangeEvent" msprop:Generator_RowClassName="DataTabelbillRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BillInfo_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBillInfo_id" msprop:Generator_ColumnPropNameInRow="BillInfo_id" msprop:Generator_ColumnPropNameInTable="BillInfo_idColumn" msprop:Generator_UserColumnName="BillInfo_id" type="xs:int" />
+              <xs:element name="Bill_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBill_id" msprop:Generator_ColumnPropNameInRow="Bill_id" msprop:Generator_ColumnPropNameInTable="Bill_idColumn" msprop:Generator_UserColumnName="Bill_id" type="xs:int" />
+              <xs:element name="Food_name" msprop:Generator_ColumnVarNameInTable="columnFood_name" msprop:Generator_ColumnPropNameInRow="Food_name" msprop:Generator_ColumnPropNameInTable="Food_nameColumn" msprop:Generator_UserColumnName="Food_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="count" msprop:Generator_ColumnVarNameInTable="columncount" msprop:Generator_ColumnPropNameInRow="count" msprop:Generator_ColumnPropNameInTable="countColumn" msprop:Generator_UserColumnName="count" type="xs:int" />
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:decimal" />
+              <xs:element name="Ngaygio" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNgaygio" msprop:Generator_ColumnPropNameInRow="Ngaygio" msprop:Generator_ColumnPropNameInTable="NgaygioColumn" msprop:Generator_UserColumnName="Ngaygio" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Tong" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTong" msprop:Generator_ColumnPropNameInRow="Tong" msprop:Generator_ColumnPropNameInTable="TongColumn" msprop:Generator_UserColumnName="Tong" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GioVao" msprop:Generator_ColumnVarNameInTable="columnGioVao" msprop:Generator_ColumnPropNameInRow="GioVao" msprop:Generator_ColumnPropNameInTable="GioVaoColumn" msprop:Generator_UserColumnName="GioVao" type="xs:duration" minOccurs="0" />
+              <xs:element name="Giora" msprop:Generator_ColumnVarNameInTable="columnGiora" msprop:Generator_ColumnPropNameInRow="Giora" msprop:Generator_ColumnPropNameInTable="GioraColumn" msprop:Generator_UserColumnName="Giora" type="xs:duration" minOccurs="0" />
+              <xs:element name="ban" msprop:Generator_ColumnVarNameInTable="columnban" msprop:Generator_ColumnPropNameInRow="ban" msprop:Generator_ColumnPropNameInTable="banColumn" msprop:Generator_UserColumnName="ban">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableFood" msprop:Generator_TableClassName="DataTableFoodDataTable" msprop:Generator_TableVarName="tableDataTableFood" msprop:Generator_TablePropName="DataTableFood" msprop:Generator_RowDeletingName="DataTableFoodRowDeleting" msprop:Generator_RowChangingName="DataTableFoodRowChanging" msprop:Generator_RowEvHandlerName="DataTableFoodRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableFoodRowDeleted" msprop:Generator_UserTableName="DataTableFood" msprop:Generator_RowChangedName="DataTableFoodRowChanged" msprop:Generator_RowEvArgName="DataTableFoodRowChangeEvent" msprop:Generator_RowClassName="DataTableFoodRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableFood_name" msprop:Generator_ColumnVarNameInTable="columnTableFood_name" msprop:Generator_ColumnPropNameInRow="TableFood_name" msprop:Generator_ColumnPropNameInTable="TableFood_nameColumn" msprop:Generator_UserColumnName="TableFood_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AreaName" msprop:Generator_ColumnVarNameInTable="columnAreaName" msprop:Generator_ColumnPropNameInRow="AreaName" msprop:Generator_ColumnPropNameInTable="AreaNameColumn" msprop:Generator_UserColumnName="AreaName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bill_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBill_id" msprop:Generator_ColumnPropNameInRow="Bill_id" msprop:Generator_ColumnPropNameInTable="Bill_idColumn" msprop:Generator_UserColumnName="Bill_id" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTableFood" />
+      <xs:field xpath="mstns:Bill_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

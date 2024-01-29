@@ -1,0 +1,112 @@
+﻿@model PagedList.IPagedList<Models.ViewModel.ViewBill>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Indexbep";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var user_Sesion = Session["User_Session"] as QuanLiCafe.Common.UserLogin;
+}
+
+
+@section header{
+
+}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <h4 class="card-header fas fa-coffee">&nbsp; DANH SÁCH MÓN THEO ORDER</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Index", "QLBepBar", FormMethod.Get))
+            {
+                    <div class="row">
+                        <div class="col-md-3">
+                            <input type="text" value="@ViewBag.seaching" placeholder="Tìm kiếm theo tên" class="form-control" name="seaching" style="border-radius:0.2em" />
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-info active btn-sm" style="border-radius:0.2em"><i class="fas fa-search"></i>&nbsp;Tìm kiếm</button>
+                        </div>
+                    </div>
+            }
+                <br />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Bàn</th>
+                            <th scope="col">Tên món</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Giờ vào</th>
+                            @if(@user_Sesion.idRoel !=4 && @user_Sesion.idRoel != 1)
+                            {
+
+                            }
+                            else
+                            {
+                            <th scope="col">Chế biến</th>
+                            <th scope="col">Trả món</th>
+                            }
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+
+                                    foreach (var item in Model)
+                                    {
+                                   
+                                    <tr id="row_@item.Food_id">
+                                        <td scope="col">@item.TableFood_name</td>
+                                        <td scope="col">@item.Food_name</td>
+                                        <td scope="col">@item.count</td>
+                                        <td scope="col">@string.Format("{0}:{1}",item.Timein.Value.Hours,item.Timein.Value.Minutes)</td>
+                                        @if(@user_Sesion.idRoel !=4 && @user_Sesion.idRoel != 1)
+                                        {
+
+                                        }
+                                        else
+                                        {
+                                        <td scope="col">
+                                            <a name="CapNhat" class="btn btn-success btn-sm update" href="#" style="color:white;border-radius:0.2em" data-id="@item.Food_id">Chế biến</a>
+                                        </td>
+                                        <td scope="col">
+                                            <a class="btn btn-warning btn-sm Delete" onclick="tramon(@item.BillInfo_id)" id="@item.BillInfo_id" style="color:white;border-radius:0.2em">Trả món</a>
+                                        </td>
+                                        }
+                                       
+                                    </tr>
+                        }
+                        }
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = @page, searching = @ViewBag.searching }))
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<script>
+    function tramon(id)
+    {
+        
+        $.ajax({
+            url: '@Url.Action("tramon", "QLBepBar")',
+            data: { idbill: id },
+            type: 'POST',
+            dataType: 'json',
+            success: function (response) {
+                var data = response.idbill;
+                var idbill = '#' + data;
+                $(idbill).text("Đã trả");
+                $(idbill).css({ "background": "red", "color": "white" });
+            },
+            error: function () {
+                alert('Lỗi rồi');
+            }
+
+        })
+   }
+    //$('.Delete').click(function(){
+    //    $(this).text("Đã trả");
+    //    $(this).css({ "background": "red", "color": "white" });
+    //})
+</script>

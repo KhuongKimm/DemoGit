@@ -1,0 +1,117 @@
+F:\DATN\QuanLiCafe\Models\bin\Debug\Models.dll.config
+F:\DATN\QuanLiCafe\Models\bin\Debug\Models.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\Models.pdb
+F:\DATN\QuanLiCafe\Models\bin\Debug\EntityFramework.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\PagedList.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\Xceed.Words.NET.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\Microsoft.SqlServer.Types.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\EntityFramework.xml
+F:\DATN\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.xml
+F:\DATN\QuanLiCafe\Models\bin\Debug\PagedList.xml
+F:\DATN\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.xml
+F:\DATN\QuanLiCafe\Models\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\Models\obj\Debug\Models.dll
+F:\DATN\QuanLiCafe\Models\obj\Debug\Models.pdb
+F:\DATN\QuanLiCafe\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+F:\DATN 2\QuanLiCafe\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+F:\DATN 2\QuanLiCafe\Models\obj\Debug\Models.dll
+F:\DATN 2\QuanLiCafe\Models\obj\Debug\Models.pdb
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Models.dll.config
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Models.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Models.pdb
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\EntityFramework.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\PagedList.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Xceed.Words.NET.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\Microsoft.SqlServer.Types.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\EntityFramework.xml
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.xml
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\PagedList.xml
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.xml
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\Models\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll.config
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.pdb
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Xceed.Words.NET.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.pdb
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll.config
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.pdb
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Xceed.Words.NET.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.CopyComplete
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.pdb
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll.config
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Models.pdb
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\Xceed.Words.NET.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\bin\Debug\PagedList.Mvc.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.csproj.CopyComplete
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\Models\obj\Debug\Models.pdb

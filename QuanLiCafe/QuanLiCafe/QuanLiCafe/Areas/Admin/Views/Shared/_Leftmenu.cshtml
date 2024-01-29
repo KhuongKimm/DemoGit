@@ -1,0 +1,101 @@
+﻿@{
+    var user_Sesion = Session["User_Session"] as QuanLiCafe.Common.UserLogin;
+}
+@if (user_Sesion.idRoel != 1)
+{
+    <style>
+        #showthucdon {
+            display: block;
+        }
+
+        #showthongke {
+            display: none;
+        }
+        #showTongQuan{
+            display:none;
+        }
+    </style>
+}
+else
+{
+    <style>
+        #showthucdon {
+            display: block;
+        }
+        #showTongQuan {
+            display: block;
+        }
+        #showthongke {
+            display: block;
+        }
+    </style>
+}
+
+<div class="nav-left-sidebar sidebar-dark">
+    <div class="menu-list">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-divider">
+                        Menu
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="/HomeClient/Index" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fas fa-paper-plane"></i>Bán hàng <span class="badge badge-success">6</span></a>
+
+                    </li>
+                    <li class="nav-item" id="showTongQuan">
+                        <a class="nav-link" href="/Admin/Home/index" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-home"></i>Tổng quan</a>
+                    </li>
+                    <li class="nav-item " id="showTongQuan">
+                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-4"><i class="fas fa-table"></i>Sơ đồ phòng,bàn</a>
+                        <div id="submenu-8" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/Area/index">Khu vực</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/TableFood/index">Bàn</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item " id="showthucdon">
+                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fas fa-coffee"></i>Đồ uống, món ăn</a>
+                        <div id="submenu-4" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/Food/index">Đồ uống - Món ăn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/FoodCategory/index">Nhóm thực đơn</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Admin/DVT/index">Đơn vị tính</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item" id="showthucdon">
+                        <a class="nav-link" href="/Admin/QLBepBar/index" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-diagnoses"></i>Quản lí bếp/bar</a>
+                    </li>
+                    <li class="nav-item" id="showTongQuan">
+                        <a class="nav-link" href="/Admin/TKDT/index" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="far fa-chart-bar"></i>Thống kê doanh thu</a>
+                    </li>
+                   
+                    <li class="nav-item" id="showTongQuan">
+                        <a href="/Admin/CTHD/index" class="nav-link" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-database"></i>Quản lý hóa đơn</a>
+                    </li>
+                    <li class="nav-item" id="showTongQuan">
+                        <a  href="/Admin/User/index" class="nav-link" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fa fa-fw fa-user-circle"></i>Quản lý nhân viên</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</div>
+

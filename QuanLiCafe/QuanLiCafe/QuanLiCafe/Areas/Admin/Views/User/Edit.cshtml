@@ -1,0 +1,85 @@
+﻿@model Models.EF.Account
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@section header{
+    Cập nhập tài khoản
+}
+<div class="row">
+    <div class="col-10">
+        <div class="card">
+            <h4 class="card-header">Thông tin cập nhật</h4>
+            <div class="card-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.id)
+                        @Html.HiddenFor(model => model.idRole)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.UserName, new { htmlAttributes = new { @class = "col-5"}, @style = "border-radius:5px;outline:none;padding:5px" })
+                            @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.PassWord, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.PassWord, new { htmlAttributes = new { @class = "col-5" }, @style = "border-radius:5px;outline:none;padding:5px"  })
+                            @Html.ValidationMessageFor(model => model.PassWord, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.Name, new { htmlAttributes = new { @class = "col-5" }, @style = "border-radius:5px;outline:none;padding:5px"  })
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.Email, new { htmlAttributes = new { @class = "col-5" }, @style = "border-radius:5px;outline:none;padding:5px"  })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.Address, new { htmlAttributes = new { @class = "col-5" }, @style = "border-radius:5px;outline:none;padding:5px"  })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                          
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.TextBoxFor(model => model.Phone, new { htmlAttributes = new { @class = "col-5" }, @style = "border-radius:5px;outline:none;padding:5px" })
+                            @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.CheckBoxFor(model => model.status)
+                            @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Lưu dữ liệu" class="btn btn-success" style="padding:5px 16px;" />
+                                @if (Model.idRole != 1)
+                                {
+                                    <a href="/Admin/Home/HomeMember" class="btn btn-dark btn-sm">Hủy thao tác</a>
+                                }
+                                else
+                                {
+                                    <a href="/Admin/User/index" class="btn btn-dark btn-sm">Hủy thao tác</a>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

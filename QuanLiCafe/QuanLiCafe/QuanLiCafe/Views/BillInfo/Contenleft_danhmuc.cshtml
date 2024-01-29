@@ -1,0 +1,60 @@
+﻿@*@model Models.ViewModel.ViewArea
+<div class="danhMuc">
+    @foreach (var item in Model.FoodCategorys)
+    {
+        <a href="#mon_@item.FoodCategory_id" id="CaFe" class="btn btn-primary btn-xs">@item.name</a><br />
+    }
+</div>
+<div id="danhMuc_item">
+    <div class="danhmic_listitem current" id="cafe">
+        <a href="">
+            <div>
+                Bạc xỉu <br /> @string.Format("{0:0,0}", 25000) đ
+            </div>
+        </a>
+        <a href="">
+            <div>
+                Đá xay<br />@string.Format("{0:0,0}", 25000) đ
+            </div>
+        </a>
+        <a href="">
+            <div>
+                Nâu [nóng/đá]<br /> @string.Format("{0:0,0}", 25000) đ
+            </div>
+        </a>
+        <a href="">
+            <div>
+                Socala Đá xay<br /> @string.Format("{0:0,0}", 25000) đ
+            </div>
+        </a>
+        <a href="">
+            <div>
+                Sinh tố dứa<br /> @string.Format("{0:0,0}", 25000) đ
+            </div>
+        </a>
+    </div>
+    @foreach (var item in Model.FoodCategorys)
+    {
+        var food = Model.Foods.Where(x => x.idCategory == item.FoodCategory_id);
+        <div class="danhmic_listitem" id="mon_@item.FoodCategory_id">
+            @foreach (var k in food)
+            {
+
+                <div onclick="Chonmon(@k.Food_id)">
+                    @k.name <br /> @string.Format("{0:0,0}", k.price) đ
+                </div>
+
+            }
+        </div>
+    }
+</div>*@
+
+
+
+
+
+
+
+
+
+

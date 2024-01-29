@@ -1,0 +1,162 @@
+﻿@model PagedList.IPagedList<Models.EF.FoodCategory>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Nhóm thực đơn";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var user_session = Session["User_Session"] as QuanLiCafe.Common.UserLogin;
+}
+@section header{
+    Nhóm thực đơn
+}
+@section jsFooter{
+    <script src="~/Assets/Admin/libs/js/FoodCategory/FoodCaController.js"></script>
+    <script src="~/scripts/jquery.unobtrusive-ajax.min.js"></script>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <h5 class="card-header fas fa-coffee">&nbsp; Quản lí thực đơn</h5><br/>
+            @using (Html.BeginForm("Index", "FoodCategory", FormMethod.Get))
+            {
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" value="@ViewBag.seaching" style="margin-left:1.5em;" name="seaching" placeholder="Tìm kiếm theo tên" />
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="btn btn-info active btn-sm col-3"><i class="fas fa-search"></i>&nbsp;Tìm kiếm</button> &nbsp;&nbsp;
+                        @if (user_session.idRoel != 1)
+                        {
+
+                        }
+                        else
+                        {
+                            <a href="/Admin/FoodCategory/Create" class="btn btn-primary active btn-sm col-3"><i class="fas fa-plus"></i>&nbsp;Thêm mới</a>
+                        }
+                    </div>
+                </div>
+            }
+            <div class="card-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width:1em">STT</th>
+                            <th scope="col" style="width:13em">Tên nhóm</th>
+                            <th scope="col" style="width:25em">Mô tả</th>
+                            <th scope="col" style="width:9em">Trạng thái</th>
+                            @if (user_session.idRoel != 1)
+                            {
+
+                            }
+                            else
+                            {
+                                <th scope="col">Thao tác</th> }
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var dem = 1;
+                            var count = ViewBag.rowStart + dem;
+                            foreach (var item in Model)
+                            {
+                                <tr id="row_@item.FoodCategory_id">
+                                    <th >@(count++)</th>
+                                    <td >@item.FoodCategory_name</td>
+                                    <td >@item.Decription</td>
+                                    <td>
+                                        <a href="#" class="btn-active" data-id="@item.FoodCategory_id">@(item.status ? "Kích hoạt" : "Khóa")</a>
+                                    </td>
+                                    @if (user_session.idRoel != 1)
+                                    {
+
+                                    }
+                                    else
+                                    {
+                                        <td >
+                                            <a href="/Admin/FoodCategory/Edit/@item.FoodCategory_id" class="btn btn-success btn-sm col-5"><i class="fas fa-edit"></i>&nbsp;Cập nhật</a>
+                                            <Strong>|</Strong>
+                                            <a class="btn btn-warning btn-sm col-5" id="@item.FoodCategory_id" onclick="clik(@item.FoodCategory_id)" style="color:white;"><i class="fas fa-trash-alt"></i>&nbsp;Xóa</a>
+                                        </td> }
+
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page, seaching = @ViewBag.seaching }))
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-wrapper-Del" class="modal">
+    @using (Html.BeginForm("Delete", "FoodCategory", FormMethod.Post, new { @class = "modal-contentDel animateDel" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="container-confirm">
+            <div class="title-main">Xác nhận xóa</div>
+            <div class="title-content">
+                <div class="content-titlt">Bạn có đồng ý xóa ?</div>
+                <div class="content-confrim">
+                    <a class="btnCf-cancel" onclick="document.getElementById('modal-wrapper-Del').style.display = 'none'">Hủy</a>
+                    <button class="btnCf-yes" type="submit" onclick="dongy(idfood)" id="DeleteF">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    @*function clik(id) {
+        var iddelete =
+         {
+             id: id
+         }
+        var x = confirm("Bạn có muốn xóa bản ghi?");
+        if (x) {
+            $.ajax({
+                url: '@Url.Action("Delete", "FoodCategory")',
+                type: 'POST',
+                data: iddelete,
+                conform: "Bạn có muốn xóa bản ghi",
+                OnComplete: function () {
+                    OnComplete: "$('#row_" + id + "').remove()"
+                },
+                success: function () {
+                    window.location.reload();
+                },
+                error: function () {
+                    alert('error');
+                }
+            })
+        }
+    }*@
+    function clik(id) {
+        document.getElementById('modal-wrapper-Del').style.display = 'block';
+        $('#DeleteF').click(function (e) {
+            var iddelete =
+           {
+               id: id
+           }
+            $.ajax({
+                url: '@Url.Action("Delete", "FoodCategory")',
+                type: 'POST',
+                data: iddelete,
+                OnComplete: function () {
+                    OnComplete: "$('#row_" + id + "').remove()";
+                },
+                success: function () {
+                    window.location.reload();
+                },
+                error: function () {
+                    alert('error');
+                }
+            })
+        })
+
+
+    }
+</script>

@@ -1,0 +1,107 @@
+﻿@model Models.EF.Bill
+ 
+    <div id="modal-wrapper" class="modal" style="display:block">
+
+
+    @using (Html.BeginForm("Update", "Food", FormMethod.Post, new { @class = "modal-content animate",@style="width:660px" }))
+    {
+
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+            <h2 style="text-align:center;color:#007bff">Chi tiết hóa đơn</h2>
+            <h5>SHD: &nbsp;@Model.Bill_id</h5>
+        </div>
+        <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-group row" style="padding:5px 0px">
+                            <label for="inputEmail2" class="col-lg-4 col-form-label text-right">Ngày vào:</label>
+                            <div class="col-lg-6" style="padding:8px 16px;">
+                                @string.Format("{0:dd/MM/yyyy}", Model.DateCheckIn)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="form-group row" style="padding:5px 0px">
+                            <label for="inputEmail2" class="col-lg-4 col-form-label text-right">Giờ vào:</label>
+                            <div class="col-lg-6" style="padding:8px 16px;">
+                               @string.Format("{0}:{1}", Model.Timein.Value.Hours, Model.Timein.Value.Minutes)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group row" style="padding:5px 0px">
+                            <label for="inputEmail2" class="col-lg-4 col-form-label text-right">Giờ ra:</label>
+                            <div class="col-lg-6" style="padding:8px 16px;">
+                                @string.Format("{0}:{1}", Model.Timeout.Value.Hours, Model.Timeout.Value.Minutes)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            <div class="card-body">
+                <table class="table table-bordered" style="margin-left:0px">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên món</th>
+                            <th>Số lượng</th>
+                            <th>DVT</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var countstt = 0;
+                            var tong = 0;
+
+                            foreach (var item in Model.viewbill)
+                            {
+                                foreach (var item2 in Model.Foodsbill)
+                                {
+                                    if (item.idFood == item2.Food_id)
+                                    {
+                                        tong += Convert.ToInt32(item.count * item2.Price);
+                                        <tr id="row_@item.BillInfo_id">
+                                            <td>@(countstt += 1) </td>
+                                            <td data-id="@item.idBill"> @item2.Food_name</td>
+                                            <td>@item.count</td>
+                                            <td style="text-align:center"> @item2.DVT_Name</td>
+                                            <td>@string.Format("{0:0,0}", item2.Price)</td>
+                                            <td>@string.Format("{0:0,0}", (item2.Price * item.count))</td>
+                                        </tr>
+                                    }
+                                }
+
+
+                            }
+
+                            <tr>
+                                <td colspan="5"><b>Tổng</b></td>
+                                <td>@string.Format("{0:0,0}", tong)</td>
+                            </tr>
+
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+                            }
+
+</div>
+
+
+
+
+
+
+
+

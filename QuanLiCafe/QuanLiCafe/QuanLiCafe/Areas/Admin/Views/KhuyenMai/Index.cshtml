@@ -1,0 +1,316 @@
+﻿@model PagedList.IPagedList<Models.EF.KhuyenMai>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{Khuyến mãi}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <h4 class="card-header fas fa-coffee">&nbsp; Tạo khuyến mãi</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Create", "KhuyenMai", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Tên Chương trình:</label>
+                                <div class="col-lg-8">
+                                    <input type="text" class="form-control khuyenmaiName" name="KM_Name" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Trạng thái:</label>
+                                <div class="col-lg-5" style="padding-top:10px;">
+                                    <input data-val="true" data-val-required="The isNewlyEnrolled field is required." id="status" name="status" type="checkbox" value="true" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Thời gian Từ:</label>
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control namefood" name="TimeTu" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Thời gian đến:</label>
+                                <div class="col-lg-6">
+                                    <input type="date" class="form-control namefood" name="TimeDen" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Giảm giá(%):</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control pricefood" name="KM_Value" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-lg-6">
+                            <div class="form-group row">
+                                <label for="inputEmail2" class="col-lg-3 col-form-label text-left">Mô tả:</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control namefood" name="Descreption" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pt-2 pt-sm-5 mt-1" style="padding-top: 0px !important;float: right;margin-right: 130px;">
+                        <div class="col-sm-6 pl-0">
+                            <p class="text-success">
+                                <button class="btn btn-space btn-primary"><i class="fas fa-plus"></i>&nbsp;Tạo mới</button>
+                            </p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="card">
+            <h4 class="card-header fas fa-coffee">&nbsp; Danh sách khuyến mãi</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Index", "KhuyenMai", FormMethod.Get))
+                {
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" value="@ViewBag.seaching" placeholder="Tìm kiếm theo tên" class="form-control" name="seaching" />
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-info active btn-sm"><i class="fas fa-search"></i>&nbsp;Tìm kiếm</button>
+                        </div>
+                    </div>
+                }
+                <br />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Tên Chương trình</th>
+                            <th scope="col">Thời gian áp dụng</th>
+                            <th scope="col">Giảm giá theo(%)</th>
+                            <th scope="col">Mô tả</th>
+                            <th scope="col">Tình trạng</th>
+                            <th scope="col">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var dem = 1;
+                            var count = ViewBag.rowStrart + dem;
+                            foreach (var item in Model)
+                            {
+                                <tr id="row_@item.KM_id">
+                                    <th scope="col">@(count++)</th>
+                                    <td scope="col">@item.KM_Name</td>
+                                    <td scope="col">@item.TimeTu.ToString("dd/MM/yyyy")-@item.TimeDen.ToString("dd/MM/yyyy")</td>
+                                    <td scope="col">@item.KM_Value</td>
+                                    <td scope="col">@item.Descreption</td>
+                                    <td scope="col">
+                                        <a href="#" class="btn-active" data-id="@item.KM_id">@(item.status ? "Còn hạn" : "Hết hạn")</a>
+                                    </td>
+                                    <td>
+                                        <a name="CapNhat" class="btn btn-success btn-sm update" onclick="UpdateFood(@item.KM_id)" style="color:white" data-id="@item.KM_id">
+                                            <i class="fas fa-edit"></i>&nbsp;Cập nhập
+                                        </a>
+                                        |
+                                        <a class="btn btn-warning btn-sm Delete" data-id="@item.KM_id" id="@item.KM_id" onclick="DeleteFood(this,@item.KM_id)" style="color:white;"><i class="fas fa-trash-alt"></i>&nbsp;Xóa</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = @page, seaching = @ViewBag.seaching }))
+            </div>
+        </div>
+    </div>
+    <div id="modal-wrapper" class="modal">
+        @using (Html.BeginForm("Update", "KhuyenMai", FormMethod.Post, new { @class = "modal-content animate" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <h1 style="text-align:center;color:#007bff">Cập nhật món ăn</h1>
+            </div>
+            <div class="container">
+                <table>
+                    <tr>
+                        <td>Chương trình:</td>
+                        <td><input type="text" placeholder="Enter Username" id="KMName" class="text" name="KM_Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian từ:</td>
+
+                        <td><input type="text" placeholder="Enter Password" id="Timetu" class="text" name="TimeTu"></td>
+                    </tr>
+                    <tr>
+                        <td>Thời gian đến:</td>
+
+                        <td><input type="text" placeholder="Enter Password" id="Timeden" class="text" name="TimeDen"></td>
+                    </tr>
+                    <tr>
+                        <td>Giảm giá(%):</td>
+
+                        <td><input type="text" placeholder="Enter Password" id="kmValue" class="text" name="KM_Value"></td>
+                    </tr>
+                    <tr>
+                        <td>Mô tả:</td>
+
+                        <td><input type="text" placeholder="Enter Password" id="descrip" class="text" name="Descreption"></td>
+                    </tr>
+                    <tr>
+                        <td>Trạng thái</td>
+                        <td><input type="checkbox" name="status" class="checkbox" id="ckStatus" /></td>
+                    </tr>
+                </table>
+
+                <button type="submit" class="button" id="submit">Save</button>
+            </div>
+        }
+    </div>
+    <div id="modal-wrapper-Del" class="modal">
+        @using (Html.BeginForm("Delete", "KhuyenMai", FormMethod.Post, new { @class = "modal-contentDel animateDel" }))
+        {
+        @Html.AntiForgeryToken()
+
+        <div class="container-confirm">
+            <div class="title-main">Xác nhận xóa</div>
+            <div class="title-content">
+                <div class="content-titlt">Bạn có đồng ý xóa ?</div>
+                <div class="content-confrim">
+                    <a class="btnCf-cancel" onclick="document.getElementById('modal-wrapper-Del').style.display = 'none'">Hủy</a>
+                    <button class="btnCf-yes" type="submit" onclick="dongy(idfood)" id="DeleteF">Đồng ý</button>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+<script>
+    var foodId = 0;
+    var Deleteid = 0;
+    var idfood = 0;
+    //sự kiện xóa
+    function DeleteFood(element, id) {
+        document.getElementById('modal-wrapper-Del').style.display = 'block';
+
+        $('#DeleteF').click(function (e) {
+            var iddelete =
+           {
+               id: id
+           }
+            $.ajax({
+                url: '@Url.Action("Delete", "KhuyenMai")',
+                type: 'GET',
+                data: iddelete,
+                conform: "Bạn có muốn xóa bản ghi",
+                OnComplete: function () {
+                    OnComplete: "$('#row_" + id + "').remove()"
+                },
+                success: function () {
+                    window.location.reload();
+                },
+                error: function () {
+                    alert('error');
+                }
+            })
+        })
+
+
+    }
+
+    // If user clicks anywhere outside of the modal, Modal will close
+
+    var modal = document.getElementById('modal-wrapper');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    //Bind giữ liệu lên popup
+    function UpdateFood(id) {
+        document.getElementById('modal-wrapper').style.display = 'block';
+        $.ajax({
+            url: '@Url.Action("Edit", "KhuyenMai")',
+            data:
+                { id: id },
+            type: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                var data = response.data;
+                var milisegundos = parseInt(data.TimeDen.replace("/Date(", "").replace(")/", ""));
+                var newDate = new Date(milisegundos).toLocaleDateString("ca-ES");
+                var milisegundos1 = parseInt(data.TimeTu.replace("/Date(", "").replace(")/", ""));
+                var newDate1 = new Date(milisegundos1).toLocaleDateString("ca-ES");
+                var ahih=newDate.toString("dd/MM/yyyy");
+                $('#KMName').val(data.KM_Name);
+                $('#Timetu').val(ahih);
+                $('#ckStatus').prop('checked', data.status);
+                $('#Timeden').val(newDate1);
+                $('#kmValue').val(data.KM_Value);
+                $('#descrip').val(data.Descreption);
+                foodId = id;
+            },
+            error: function () {
+                alert('Lỗi rồi');
+            }
+        })
+    }
+    //update dữ liệu...
+    $('#submit').click(function (e) {
+        //call ajax
+    
+        var kmname=$('#KMName').val();
+        var timetu=$('#Timetu').val();
+        var stt=$('#ckStatus').prop('checked');
+        var timeden=$('#Timeden').val();
+        var kmvalue=$('#kmValue').val();
+        var mota=$('#descrip').val();
+        var food_id = foodId;
+        var km = {
+            KM_id: food_id,
+            KM_Name: kmname,
+            TimeTu: timetu,
+            TimeDen: timeden,
+            Descreption: mota,
+            KM_Value: kmvalue,
+            status: stt
+        }
+        $.ajax({
+            url: '@Url.Action("Update", "KhuyenMai")',
+            type: 'POST',
+            data: km,
+            success: function () {
+                document.getElementById('modal-wrapper').style.display = 'none';
+                window.location.reload();
+            },
+            error: function () {
+                alert('error');
+            }
+        })
+        e.preventDefault();
+    })
+
+    //=====================DELETE===================
+    var modal = document.getElementById('modal-wrapper-Del');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+

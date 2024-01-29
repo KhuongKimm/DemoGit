@@ -1,0 +1,337 @@
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\ApplicationInsights.config
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\csc.exe
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Collections.Immutable.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Reflection.Metadata.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\vbc.exe
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe.config
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll.config
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.pdb
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\EntityFramework.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Agent.Intercept.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.ReportViewer.WebForms.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.Web.Infrastructure.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Models.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\PagedList.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Xceed.Words.NET.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.SqlServer.Types.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Models.pdb
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\EntityFramework.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\PagedList.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.xml
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\de\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\es\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\fr\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\it\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\ja\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\ko\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\pt\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\ru\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csprojResolveAssemblyReference.cache
+F:\DATN\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.dll
+F:\DATN\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.pdb
+F:\DATN 2\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csprojResolveAssemblyReference.cache
+F:\DATN 2\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.pdb
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\ApplicationInsights.config
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\csc.exe
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Collections.Immutable.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Reflection.Metadata.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\vbc.exe
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe.config
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll.config
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.pdb
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\EntityFramework.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Agent.Intercept.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.ReportViewer.WebForms.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.Web.Infrastructure.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Models.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\PagedList.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Xceed.Words.NET.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.SqlServer.Types.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Models.pdb
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\EntityFramework.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\PagedList.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.xml
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\de\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\es\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\fr\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\it\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\ja\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\ko\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\pt\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\ru\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\bin\Reports.dll
+F:\DATN 2\QuanLiCafe\QuanLiCafe\obj\Debug\RdlCompile.cache
+F:\DATN 2\QuanLiCafe\QuanLiCafe\obj\Debug\RdlCompile.compiled
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ApplicationInsights.config
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\csc.exe
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Collections.Immutable.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Reflection.Metadata.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\vbc.exe
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe.config
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll.config
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.pdb
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Agent.Intercept.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ReportViewer.WebForms.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.Web.Infrastructure.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Reports.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Xceed.Words.NET.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.SqlServer.Types.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.pdb
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.xml
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\de\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\es\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\fr\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\it\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ja\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ko\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\pt\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ru\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csprojResolveAssemblyReference.cache
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\RdlCompile.cache
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\RdlCompile.compiled
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.dll
+D:\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.pdb
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ApplicationInsights.config
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\csc.exe
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Collections.Immutable.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Reflection.Metadata.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\vbc.exe
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe.config
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll.config
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.pdb
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ReportViewer.WebForms.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.Web.Infrastructure.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Reports.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Xceed.Words.NET.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.pdb
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.dll.config
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.xml
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.AssemblyReference.cache
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.CoreCompileInputs.cache
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.CopyComplete
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.dll
+E:\TaiLieuDA\DOannnn\DATN_DOQUANGTAI\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.pdb
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\ApplicationInsights.config
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\csc.exe
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Collections.Immutable.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\System.Reflection.Metadata.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\vbc.exe
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\roslyn\VBCSCompiler.exe.config
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll.config
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\QuanLiCafe.pdb
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Agent.Intercept.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ReportViewer.WebForms.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.Web.Infrastructure.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Reports.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Xceed.Words.NET.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.pdb
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Models.dll.config
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\EntityFramework.SqlServer.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.DependencyCollector.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.Web.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.AI.WindowsServer.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.ApplicationInsights.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\PagedList.Mvc.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Razor.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Deployment.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Webpages.Razor.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Helpers.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\bin\System.Web.Mvc.xml
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.AssemblyReference.cache
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.CoreCompileInputs.cache
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.csproj.CopyComplete
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.dll
+E:\TaiLieuDA\DOAN\DATN_KhuongKim\QuanLiCafe\QuanLiCafe\QuanLiCafe\obj\Debug\QuanLiCafe.pdb

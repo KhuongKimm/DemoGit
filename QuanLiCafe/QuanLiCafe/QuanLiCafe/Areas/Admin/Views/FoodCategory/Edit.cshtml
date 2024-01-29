@@ -1,0 +1,51 @@
+﻿@model Models.EF.FoodCategory
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Cập nhật danh mục món ăn}
+<div class="row">
+    <div class="col-8">
+        <div class="card">
+            <h4 class="card-header">Thông tin cập nhật</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Edit", "FoodCategory", FormMethod.Post))
+            {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.FoodCategory_id)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.FoodCategory_name, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.EditorFor(model => model.FoodCategory_name, new { htmlAttributes = new { @class = "col-5", @style = "border-radius:5px;outline:none;padding:5px" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Decription, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.EditorFor(model => model.Decription, new { htmlAttributes = new { @class = "col-5", @style = "border-radius:5px;outline:none;padding:5px" } })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "control-label col-3" })
+                            @Html.EditorFor(model => model.status)
+                            @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Lưu dữ liệu" class="btn btn-success btn-sm" />
+                                <a href="/Admin/FoodCategory/index" class="btn btn-dark btn-sm">Hủy thao tác</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,239 @@
+﻿@model IEnumerable<Models.ViewModel.ViewBill>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    List<SelectListItem> li = new List<SelectListItem>();
+    var date = DateTime.Now;
+    li.Add(new SelectListItem() { Text = "Trong Ngày", Value = "1" });
+    li.Add(new SelectListItem() { Text = "Trong Tháng", Value = "3" });
+    li.Add(new SelectListItem() { Text = "Trong Năm", Value = "4" });
+}
+<style>
+    /*.header{
+        font-size:25px;
+        padding:10px;
+        color:#007bff;
+        font-weight:bold;
+        border-bottom:2px solid #007bff;
+        border-width:5px;
+    }*/
+    .doanhthu1
+    {
+           border-radius: 5px;
+    border-color: #007bff;
+    font-size: 15px;
+    outline-style: none;
+    height: 2.35em;
+    margin-top: 1.45em;
+    }
+    .dropdown-style{
+        margin:50px;
+    }
+    .viewdoanhthu{
+      width: 40%;
+    height: 15.1em;
+    border: 1px solid #007bff;
+    border-radius: 0.3em;
+    margin-left: 30%;
+    margin-bottom: 10em;
+    outline-style: none;
+    }
+    .doanhthutitle{
+        background-color: #007bff;
+        text-align:center;
+        color:#fff;
+        font-size:20px;
+        border-radius:4px 4px 0px 0px;
+        padding:20px;
+    }
+    .valuedanhthu{
+    text-align: center;
+    font-size: 40px;
+    padding: 37px 0 42px 0px;
+    color:#007bff;
+    }
+    #date{
+          border-radius:5px;
+        border-color:#007bff;
+        padding:4px 5px;
+        font-size:15px;
+        outline-style: none;
+    }
+    #date1{
+        border-radius:5px;
+        border-color:#007bff;
+        padding:4px 5px;
+        font-size:15px;
+        outline-style: none;
+    }
+</style>
+@section header{
+    Thống Kê Doanh Thu
+    }
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card" >
+            <h4 class="card-header fas fa-coffee">&nbsp; Chi tiết Thống kê</h4>
+            <div class="card-body">
+                @using (Html.BeginForm("Index", "TKDT", FormMethod.Get))
+                {
+                    <div class="row">
+                        @Html.DropDownList("ChonTime", li, "--Lựa chọn thời gian--", new { @class = "doanhthu1 col-3" })
+                        <div class="col-3">
+                         Từ ngày: <input type="date" name="date" id="date" class="col"/>
+                        </div>
+                        <div class="col-3">
+                            Đến ngày: <input type="date" name="date1" id="date1" class="col"/>
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-info active btn-sm" id="tkdt" style="margin-top:1.7em"><i class="fas fa-search"></i>&nbsp;Tìm kiếm</button>
+                        </div>
+                    </div>
+                }
+                <br />
+                <table class="table table-bordered"  style="display:none">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Số hóa đơn</th>
+                            <th scope="col">Nhân viên</th>
+                            <th scope="col">Ngày Vào</th>
+                            <th scope="col">Giờ vào</th>
+                            <th scope="col">Giờ ra</th>
+                            <th scope="col">Bàn   </th>
+                            <th scope="col">Chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var dem = 1;
+                            var count = ViewBag.rowStart + dem;
+                           
+                            var tong = 0;
+                            foreach (var item in Model)
+                            {
+
+
+                                tong += Convert.ToInt32(item.count * item.Price);
+                                <tr id="row_@item.idBill">
+                                    <th scope="col">@(dem++)</th>
+                                    <td scope="col">@item.idBill</td>
+                                    <td scope="col">@item.UserName</td>
+                                    <td scope="col">@string.Format("{0:dd/MM/yyyy}", item.DateCheckIn)</td>
+                                    <td scope="col">@string.Format("{0:HH:mm}", item.DateCheckIn)</td>
+                                    <td scope="col">
+                                        @string.Format("{0:HH:mm}", item.DateCheckOut)
+                                    </td>
+                                    <td>
+                                        @item.TableFood_name
+                                    </td>
+
+                                    <td>
+                                        <a class="btn btn-success btn-sm" data-id="@item.idBill" id="@item.idBill" onclick="ViewCTHD(@item.idBill)" style="color:white;padding:0px 8px"><i class="fas fa-eye"></i></a>
+                                    </td>
+                                </tr>
+                                }
+                            }
+                    </tbody>
+                </table>
+   
+                <div class="viewdoanhthu">
+                    <div class="groupdanhthu">
+                        <div class="doanhthutitle">
+                            DOANH THU
+                        </div>
+                        <div class="valuedanhthu">
+                            @string.Format("{0:0,0}", tong) đ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
+    </div>
+
+    </div>
+<script>
+    $('#date').click(function(){
+        var x= $('#date').val();
+        debugger
+        $('#date1').click(function(){
+            var y= $('#date1').val();
+            debugger
+            if(x>y)
+            {
+                alert("Từ ngày không thể lớn hơn đến ngày!");
+            }
+        })
+    })
+    $('.doanhthu1').change(function () {
+    var SelectedValue = $(this).val();
+    if(SelectedValue ==1)
+    {
+    
+        $('#date').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+        $('#date1').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+        }
+    else if(SelectedValue == 2)
+    {
+        $('#date').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+        $('#date1').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+    }
+    else if (SelectedValue == 3) {
+
+        $('#date').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+        $('#date1').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+    }
+    else if (SelectedValue == 4) {
+
+        $('#date').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+        $('#date1').click(function () {
+            alert('Bạn đã chọn thời gian');
+        })
+    }
+    })
+
+    $('#tkdt').click(function (e) {
+        var x = $('#date').val();
+        var y = $('#date1').val();
+        var z =$('.doanhthu1').val();
+        if(z=="" && x=="" && y=="")
+        {
+            alert('bạn cần chọn các mục để tìm kiếm');
+        }
+        else
+            if(x != "" && y=="")
+            {
+                alert('Bạn phải chọn đến ngày tìm');
+                e.preventDefault();
+            }
+            else if (y != "" && x == "") {
+                alert('Bạn phải chọn từ ngày tìm');
+                e.preventDefault();
+            }
+            else
+                if(x>y)
+                {
+                    alert("Từ ngày không thể lớn hơn đến ngày!");
+                    e.preventDefault();
+                }
+    })
+</script>
+
+
